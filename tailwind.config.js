@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        anonymous: ["Anonymous Pro", "monospace"],
+        silkScreen: ["Silkscreen", "sans-serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require("@tailwindcss/forms"),
+  ],
 };

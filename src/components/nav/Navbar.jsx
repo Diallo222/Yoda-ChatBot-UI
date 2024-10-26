@@ -13,7 +13,10 @@ const Navbar = () => {
   };
   return (
     <motion.nav className=" fixed top-0 w-full px-16 py-4 flex flex-row items-center justify-between">
-      <h2 onClick={navToHome} className="text-3xl text-black font-silkScreen">
+      <h2
+        onClick={navToHome}
+        className="text-3xl text-black font-bold font-silkScreen"
+      >
         Yoda AI
       </h2>
       <RetroButton label={"Login"} onpress={navToLogin} />

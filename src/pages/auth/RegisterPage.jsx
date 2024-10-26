@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { RetroBox, RetroButton } from "../../components/retro";
 import { AuthButton, AuthInput } from "../../components/auth";
 import { YodaAscii } from "../../components/yoda";
+import { style } from "framer-motion/client";
 
 const RegisterPage = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const RegisterPage = () => {
       <p className="text-lg md:text-2xl text-center text-black">
         Please enter your details
       </p>
-      <div className="container mt-10 flex flex-col md:flex-row mx-auto justify-center items-center gap-10">
+      <div className={`${style.container} justify-center items-center gap-10`}>
         <div className="w-full md:w-1/3">
           <RetroBox>
             <div className="w-full p-5 md:p-10">
@@ -73,7 +74,6 @@ const RegisterPage = () => {
             </div>
           </RetroBox>
         </div>
-
         <YodaAscii />
       </div>
     </div>
